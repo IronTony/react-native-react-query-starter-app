@@ -1,0 +1,33 @@
+branches:
+  only:
+    - master
+cache: false
+
+jobs:
+  include:
+    - stage: Dev Build Android 🤖
+      env:
+        global:
+          - ANDROID_API_LEVEL=28
+          - ANDROID_BUILD_TOOLS_VERSION=28.0.3
+          - ADB_INSTALL_TIMEOUT=20 # minutes (2 minutes by default)
+      language: android
+      jdk: oraclejdk8
+      android:
+        components:
+          - tools
+          - platform-tools
+          - build-tools-$ANDROID_BUILD_TOOLS_VERSION
+          - android-$ANDROID_API_LEVEL
+          - extra
+          - add-on
+          - extra-google-m2repository
+          - extra-android-m2repository
+      before_install:
+        - yes | sdkmanager "platforms;android-28"
+        - nvm install 13.7.0
+        - nvm alias default v13.7.0
+        - gem install bundler
+        - bundle install
+      install: yarn
+      script: yarn build:dev:android
