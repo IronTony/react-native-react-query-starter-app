@@ -9,15 +9,17 @@
   "Homepage": {
     "welcome": "Grazie per usare React Native Starter App\n😍 😘 🙏🏻",
     "releasedWithLove": "Creato e rilasciato con ❤️ per voi",
-    "goToAnotherPage": "Vai in un'altra pagina",
+    "gotoMoviesList": "Vai alla pagina dei Film",
     "openModal": "Apri la modale"
   },
-  "AnotherPage": {
-    "welcome": "Benvenuto in un'altra pagina",
-    "OtherPage": "Altra Pagina"
+  "MoviesList": {
+    "MoviesList": "Movies List"
   },
   "ModalPage": {
     "PageName": "Modale",
     "thisIsAModal": "Questa è una modale!"
+  },
+  "MovieDetails": {
+    "MovieDetails": "Dettaglio film"
   }
 }

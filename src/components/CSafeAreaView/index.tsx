@@ -8,7 +8,7 @@ interface ISAW {
   areaStyle?: StyleProp<ViewStyle>;
 }
 
-const NHCSafeAreaView: FC<ISAW> = ({ children, edges = ['top', 'right', 'left'], areaStyle = {} }) => {
+const CSafeAreaView: FC<ISAW> = ({ children, edges = ['top', 'right', 'left'], areaStyle = {} }) => {
   return (
     <SafeAreaView style={[globalStyle.SafeAreaViewStyle, areaStyle]} edges={edges}>
       {children}
@@ -16,4 +16,4 @@ const NHCSafeAreaView: FC<ISAW> = ({ children, edges = ['top', 'right', 'left'],
   );
 };
 
-export default NHCSafeAreaView;
+export default CSafeAreaView;

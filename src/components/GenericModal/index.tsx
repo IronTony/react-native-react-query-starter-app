@@ -1,5 +1,5 @@
+import CSafeAreaView from '@components/CSafeAreaView';
 import GenericHeader from '@components/GenericHeader';
-import NHCSafeAreaView from '@components/NHCSafeAreaView';
 import { StackActions, useNavigation } from '@react-navigation/native';
 import { Icon } from '@ui-kitten/components';
 import React, { useCallback, FC, ReactNode } from 'react';
@@ -20,7 +20,7 @@ const ModalPage: FC<IModalPage> = ({ children, pageTitle }) => {
   }, [navigation, popAction]);
 
   return (
-    <NHCSafeAreaView>
+    <CSafeAreaView>
       <GenericHeader
         BodyHeader={<Text style={styles.pageTitle}>{pageTitle}</Text>}
         RightAction={
@@ -32,7 +32,7 @@ const ModalPage: FC<IModalPage> = ({ children, pageTitle }) => {
       <ScrollView contentContainerStyle={styles.content} style={styles.container}>
         {children}
       </ScrollView>
-    </NHCSafeAreaView>
+    </CSafeAreaView>
   );
 };
 

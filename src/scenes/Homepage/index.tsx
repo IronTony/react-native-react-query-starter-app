@@ -1,6 +1,6 @@
 import EnvInfoView from '@components/AppVersion';
+import CSafeAreaView from '@components/CSafeAreaView';
 import GenericHeader from '@components/GenericHeader';
-import NHCSafeAreaView from '@components/NHCSafeAreaView';
 import { useNavigation } from '@react-navigation/native';
 import { GenericNavigationProps } from '@routes/types';
 import { Button, Icon } from '@ui-kitten/components';
@@ -23,7 +23,7 @@ const Home: FC = () => {
   }, [i18n]);
 
   return (
-    <NHCSafeAreaView>
+    <CSafeAreaView>
       <GenericHeader BodyHeader={<Icon pack="FontAwesome5" name="react" style={styles.headerIconContent} />} />
 
       <ScrollView style={styles.container} contentContainerStyle={styles.content}>
@@ -48,12 +48,12 @@ const Home: FC = () => {
 
         <View style={styles.buttonGoToContainer}>
           <Button
-            onPress={() => navigation.navigate('Main', { screen: 'OtherPage' })}
+            onPress={() => navigation.navigate('Main', { screen: 'MoviesList' })}
             style={styles.navigationButton}
             children={() => (
               <>
                 <Icon pack="EvilIcons" name="arrow-right" style={styles.iconContent} />
-                <Text style={styles.buttonText}>{t('Homepage:goToAnotherPage')}</Text>
+                <Text style={styles.buttonText}>{t('Homepage:gotoMoviesList')}</Text>
               </>
             )}
           />
@@ -67,7 +67,7 @@ const Home: FC = () => {
 
         <EnvInfoView />
       </ScrollView>
-    </NHCSafeAreaView>
+    </CSafeAreaView>
   );
 };
 

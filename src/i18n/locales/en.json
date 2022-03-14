@@ -9,15 +9,17 @@
   "Homepage": {
     "welcome": "Thank you for using the React Native Starter App\n😍 😘 🙏🏻",
     "releasedWithLove": "Created and released with ❤️ for you",
-    "goToAnotherPage": "Go to another page",
+    "gotoMoviesList": "Go to Movies List",
     "openModal": "Open Modal"
   },
-  "AnotherPage": {
-    "welcome": "Welcome to another page",
-    "OtherPage": "Other Page"
+  "MoviesList": {
+    "MoviesList": "Movies List"
   },
   "ModalPage": {
     "PageName": "Modal Page",
     "thisIsAModal": "This is a modal!"
+  },
+  "MovieDetails": {
+    "MovieDetails": "Movie Details"
   }
 }

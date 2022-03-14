@@ -24,6 +24,10 @@ const styles = StyleSheet.create({
   buttonText: {
     fontFamily: fonts.regular,
   },
+  SingleItem: {
+    alignSelf: 'flex-start',
+    flexDirection: 'row',
+  },
 });
 
 export default styles;
