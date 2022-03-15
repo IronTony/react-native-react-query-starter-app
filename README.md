@@ -1,6 +1,6 @@
-# React Native Redux Toolkit Start App <!-- omit in toc -->
+# React Native (react-query) Toolkit Start App <!-- omit in toc -->
 
-> A React Native boilerplate app to bootstrap your next app wit Redux Toolkit and Saga!
+> A React Native boilerplate app to bootstrap your next app with React-Query!
 
 [![License](https://img.shields.io/github/license/IronTony/react-native-react-query-starter-app)](LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-screen.svg?style=flat)](#contributors-:sparkles:)
@@ -155,21 +155,16 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ## Roadmap :running:
 
 ✅ Initial Setup<br/>
-✅ Add Splashscreen (https://github.com/crazycodeboy/react-native-splash-screen)<br/>
-✅ Add Toolbox (https://github.com/panz3r/react-native-toolbox)<br/>
-✅ Create tree folders structure<br/>
-✅ Add `redux-toolkit`<br/>
-✅ Add `redux-persist` (https://github.com/rt2zz/redux-persist)<br/>
-✅ Add `React Native Debugger`<br/>
-✅ Add `redux-saga`<br/>
-✅ Add `i18next`<br/>
-✅ Add `react-navigation v6` ❤️<br/>
-❌ Removed `native-base` <br/>
-✅ Add new UI Design System (`UIKitten v5`)<br />
-✅ Add `Env` variables selection experimental way ⚗️⚗️⚗️<br />
-✅ Add Typescript (optional use. Read the DOC above)<br />
-✅ Add Travis<br />
-✅ Add DependaBot<br />
+✅ Splashscreen (https://github.com/crazycodeboy/react-native-splash-screen)<br/>
+✅ Toolbox (https://github.com/panz3r/react-native-toolbox)<br/>
+✅ Folders structure<br/>
+✅ `React-query`<br/>
+✅ `React Native Debugger`<br/>
+✅ `i18next`<br/>
+✅ `React-navigation v6` ❤️<br/>
+✅ `UIKitten v5` as design system<br />
+✅ `Env` variables selection experimental way ⚗️⚗️⚗️<br />
+✅ Typescript (optional use. Read the DOC above)<br />
 
 ---
 
@@ -183,7 +178,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/IronTony"><img src="https://avatars3.githubusercontent.com/u/3645225?v=4" width="100px;" alt=""/><br /><sub><b>IronTony</b></sub></a><br /><a href="#ideas-IronTony" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/IronTony/react-native-react-query-starter-app/commits?author=IronTony" title="Code">💻</a> <a href="https://github.com/IronTony/react-native-react-query-starter-app/commits?author=IronTony" title="Documentation">📖</a> <a href="https://github.com/IronTony/react-native-react-query-starter-app/issues?q=author%3AIronTony" title="Bug reports">🐛</a> <a href="#maintenance-IronTony" title="Maintenance">🚧</a> <a href="#platform-IronTony" title="Packaging/porting to new platform">📦</a> <a href="#question-IronTony" title="Answering Questions">💬</a> <a href="https://github.com/IronTony/react-native-react-query-starter-app/pulls?q=is%3Apr+reviewed-by%3AIronTony" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/IronTony/react-native-react-query-starter-app/commits?author=IronTony" title="Tests">⚠️</a> <a href="#example-IronTony" title="Examples">💡</a></td>
-    <td align="center"><a href="http://panz3r.dev"><img src="https://avatars3.githubusercontent.com/u/1754457?v=4" width="100px;" alt=""/><br /><sub><b>Mattia Panzeri</b></sub></a><br /><a href="#ideas-panz3r" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/IronTony/react-native-react-query-starter-app/commits?author=panz3r" title="Documentation">📖</a> <a href="#tool-panz3r" title="Tools">🔧</a></td>
+    <td align="center"><a href="http://panz3r.dev"><img src="https://avatars3.githubusercontent.com/u/1754457?v=4" width="100px;" alt=""/><br /><sub><b>Mattia Panzeri</b></sub></a><br /><a href="#ideas-panz3r" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
