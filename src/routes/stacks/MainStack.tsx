@@ -1,8 +1,7 @@
-// import { TransitionPresets } from '@react-navigation/stack';
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
 import Homepage from '@scenes/Homepage';
-import MovieDetails from '@scenes/MovieDetails';
-import MoviesList from '@scenes/MoviesList';
+import UserDetails from '@scenes/UserDetails';
+import UsersList from '@scenes/UsersList';
 import { FC } from 'react';
 import * as React from 'react';
 
@@ -20,16 +19,16 @@ export const MainStackScreen: FC = () => {
         }}
       />
       <MainStack.Screen
-        name="MoviesList"
-        component={MoviesList}
+        name="UsersList"
+        component={UsersList}
         options={{
           headerShown: false,
           ...TransitionPresets.SlideFromRightIOS,
         }}
       />
       <MainStack.Screen
-        name="MovieDetails"
-        component={MovieDetails}
+        name="UserDetails"
+        component={UserDetails}
         options={{
           headerShown: false,
           ...TransitionPresets.SlideFromRightIOS,

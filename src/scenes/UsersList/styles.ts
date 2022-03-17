@@ -13,7 +13,9 @@ const styles = StyleSheet.create({
   mainText: {
     color: palette.CLOUDS,
     fontFamily: fonts.regular,
+    fontSize: 16,
     paddingVertical: 10,
+    paddingHorizontal: 10,
   },
   languangeContainer: {
     flexDirection: 'row',
@@ -25,8 +27,9 @@ const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   SingleItem: {
-    alignSelf: 'flex-start',
+    flex: 1,
     flexDirection: 'row',
+    paddingVertical: 10,
   },
 });
 

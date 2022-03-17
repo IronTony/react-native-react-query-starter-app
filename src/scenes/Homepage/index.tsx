@@ -48,12 +48,12 @@ const Home: FC = () => {
 
         <View style={styles.buttonGoToContainer}>
           <Button
-            onPress={() => navigation.navigate('Main', { screen: 'MoviesList' })}
+            onPress={() => navigation.navigate('Main', { screen: 'UsersList' })}
             style={styles.navigationButton}
             children={() => (
               <>
                 <Icon pack="EvilIcons" name="arrow-right" style={styles.iconContent} />
-                <Text style={styles.buttonText}>{t('Homepage:gotoMoviesList')}</Text>
+                <Text style={styles.buttonText}>{t('Homepage:gotoUsersList')}</Text>
               </>
             )}
           />
