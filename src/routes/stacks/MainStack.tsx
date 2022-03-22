@@ -2,6 +2,7 @@ import { createStackNavigator, TransitionPresets } from '@react-navigation/stack
 import Homepage from '@scenes/Homepage';
 import UserDetails from '@scenes/UserDetails';
 import UsersList from '@scenes/UsersList';
+import customTheme from '@theme';
 import { FC } from 'react';
 import * as React from 'react';
 
@@ -14,7 +15,7 @@ export const MainStackScreen: FC = () => {
         name="Home"
         component={Homepage}
         options={{
-          headerShown: false,
+          headerShown: true,
           ...TransitionPresets.SlideFromRightIOS,
         }}
       />
@@ -22,7 +23,13 @@ export const MainStackScreen: FC = () => {
         name="UsersList"
         component={UsersList}
         options={{
-          headerShown: false,
+          headerShown: true,
+          headerLeftContainerStyle: {
+            paddingLeft: customTheme.space[5],
+          },
+          headerRightContainerStyle: {
+            paddingRight: customTheme.space[5],
+          },
           ...TransitionPresets.SlideFromRightIOS,
         }}
       />
@@ -30,7 +37,13 @@ export const MainStackScreen: FC = () => {
         name="UserDetails"
         component={UserDetails}
         options={{
-          headerShown: false,
+          headerShown: true,
+          headerLeftContainerStyle: {
+            paddingLeft: customTheme.space[5],
+          },
+          headerRightContainerStyle: {
+            paddingRight: customTheme.space[5],
+          },
           ...TransitionPresets.SlideFromRightIOS,
         }}
       />

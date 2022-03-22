@@ -1,18 +1,11 @@
-import { globalStyle } from '@theme';
+import { Box } from 'native-base';
 import React, { FC } from 'react';
-import { StyleProp, ViewStyle } from 'react-native';
-import { Edge, SafeAreaView } from 'react-native-safe-area-context';
 
-interface ISAW {
-  readonly edges?: Edge[];
-  areaStyle?: StyleProp<ViewStyle>;
-}
-
-const CSafeAreaView: FC<ISAW> = ({ children, edges = ['top', 'right', 'left'], areaStyle = {} }) => {
+const CSafeAreaView: FC = ({ children }) => {
   return (
-    <SafeAreaView style={[globalStyle.SafeAreaViewStyle, areaStyle]} edges={edges}>
+    <Box width="100%" height="100%">
       {children}
-    </SafeAreaView>
+    </Box>
   );
 };
 

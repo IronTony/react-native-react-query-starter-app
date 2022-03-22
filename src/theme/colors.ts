@@ -26,4 +26,4 @@ const palette = {
   BLACK_OPACITY_7: 'rgba(0,0,0,0.7)',
 };
 
-export { palette };
+export default palette;

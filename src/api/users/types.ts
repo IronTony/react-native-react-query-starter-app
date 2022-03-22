@@ -29,7 +29,35 @@ export type User = {
   avatar: string;
 };
 
-export interface Support {
+export type Support = {
   url: string;
   text: string;
-}
+};
+
+export type CreateUserRequestPayload = {
+  name: string;
+  job: string;
+};
+
+export type CreateUserSuccessPayload = {
+  name: string;
+  job: string;
+  id: string;
+  createdAt: string;
+};
+
+export type ModifyUserRequestPayload = {
+  userId: string;
+  name: string;
+  job: string;
+};
+
+export type ModifyUserSuccessPayload = {
+  name: string;
+  job: string;
+  updatedAt: string;
+};
+
+export type DeleteUserRequestPayload = {
+  userId: string;
+};

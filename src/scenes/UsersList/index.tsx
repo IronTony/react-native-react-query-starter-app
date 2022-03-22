@@ -2,22 +2,19 @@ import useUsers from '@api/hooks/useUsers';
 import { User } from '@api/users/types';
 import CLoader from '@components/CLoader';
 import CSafeAreaView from '@components/CSafeAreaView';
-import GenericHeader from '@components/GenericHeader';
 import { useNavigationBackAction } from '@hooks/useNavigationBack';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import { GenericNavigationProps } from '@routes/types';
-import { globalStyle } from '@theme';
-import { Avatar } from '@ui-kitten/components';
+import { Avatar, FlatList, Flex, Icon, Pressable, Text } from 'native-base';
 import * as React from 'react';
-import { useCallback, FC } from 'react';
+import { useCallback, FC, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { View, Text, FlatList } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
-import styles from './styles';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const UsersList: FC = () => {
   const { t } = useTranslation();
   const navigation = useNavigation<GenericNavigationProps>();
+  const { setOptions } = useNavigation<GenericNavigationProps>();
   const goBack = useNavigationBackAction();
   const {
     isLoading: usersLoading,
@@ -40,12 +37,19 @@ const UsersList: FC = () => {
 
   const renderItem = useCallback(
     ({ item }: { item: User }) => (
-      <View style={styles.SingleItem} key={item.id}>
-        <TouchableOpacity onPress={() => onGotoUserDetails(item?.id)} style={globalStyle.directionRow}>
-          <Avatar source={{ uri: item?.avatar }} size="large" />
-          <Text style={styles.mainText}>{`${item.first_name} ${item.last_name}`}</Text>
-        </TouchableOpacity>
-      </View>
+      <Pressable onPress={() => onGotoUserDetails(item?.id)}>
+        <Flex flex={1} flexDirection="row" paddingY="20px" key={item.id} alignItems="center">
+          <Avatar source={{ uri: item?.avatar }} size="md" />
+          <Text
+            color="CLOUDS"
+            fontFamily="body"
+            fontStyle="normal"
+            fontSize="md"
+            paddingY="10px"
+            paddingX="10px"
+          >{`${item.first_name} ${item.last_name}`}</Text>
+        </Flex>
+      </Pressable>
     ),
     [onGotoUserDetails],
   );
@@ -62,16 +66,33 @@ const UsersList: FC = () => {
     }, [getAllUsers]),
   );
 
+  useLayoutEffect(() => {
+    setOptions({
+      headerLeft: () => (
+        <Flex flex={1} justifyContent="center">
+          <Pressable onPress={goBack}>
+            <Icon as={MaterialIcons} name="arrow-back-ios" color="MIDNIGHT_BLUE" size="24px" />
+          </Pressable>
+        </Flex>
+      ),
+      headerTitle: () => (
+        <Text fontSize="20px" fontFamily="body" fontWeight={700}>
+          {t('UsersList:UsersList')}
+        </Text>
+      ),
+    });
+  }, [goBack, setOptions, t]);
+
   return (
     <CSafeAreaView>
-      <GenericHeader onBackClicked={goBack} title={t('UsersList:UsersList')} />
-
       {usersLoading && <CLoader fullPage />}
 
       <FlatList
         data={flattenUsersList}
-        style={styles.container}
-        contentContainerStyle={styles.content}
+        backgroundColor="pageBackground"
+        _contentContainerStyle={{
+          padding: 15,
+        }}
         renderItem={renderItem}
         onRefresh={getAllUsers}
         refreshing={usersLoading}

@@ -162,7 +162,7 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ✅ `React Native Debugger`<br/>
 ✅ `i18next`<br/>
 ✅ `React-navigation v6` ❤️<br/>
-✅ `UIKitten v5` as design system<br />
+✅ `Nativebase v3` as design system<br />
 ✅ `Env` variables selection experimental way ⚗️⚗️⚗️<br />
 ✅ Typescript (optional use. Read the DOC above)<br />
 

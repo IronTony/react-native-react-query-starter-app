@@ -1,14 +1,9 @@
-import { palette } from '@theme/colors';
+import customTheme from '@theme';
 import { Platform, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  loaderContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   fullPageLoader: {
-    backgroundColor: palette.BLACK_OPACITY_7,
+    backgroundColor: customTheme.colors.BLACK_OPACITY_7,
     ...Platform.select({
       ios: {
         height: '100%',

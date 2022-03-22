@@ -29,6 +29,7 @@ module.exports = {
         '@typescript-eslint/prefer-optional-chain': 'error',
         // '@typescript-eslint/explicit-module-boundary-types': 'error',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
+        'react-native/no-inline-styles': 'off',
       },
       parser: '@typescript-eslint/parser',
       parserOptions: {

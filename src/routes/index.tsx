@@ -1,5 +1,6 @@
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
 import ModalPage from '@scenes/ModalPage';
+import customTheme from '@theme';
 import React, { FC } from 'react';
 import { routeOverlayOption } from './routeOptions';
 import { MainStackScreen } from './stacks/MainStack';
@@ -20,7 +21,14 @@ export const RootStackScreen: FC = () => {
         name="MyModal"
         component={ModalPage}
         options={{
-          headerShown: false,
+          headerShown: true,
+          headerLeft: () => <></>,
+          headerLeftContainerStyle: {
+            paddingLeft: customTheme.space[5],
+          },
+          headerRightContainerStyle: {
+            paddingRight: customTheme.space[5],
+          },
           ...TransitionPresets.ModalPresentationIOS,
         }}
       />
