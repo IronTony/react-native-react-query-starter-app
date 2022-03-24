@@ -12,7 +12,7 @@ import {
   UsersSuccessPayload,
 } from './types';
 
-export async function getUsers({ pageParam, per_page }: UsersRequestPayload): Promise<UsersSuccessPayload> {
+export async function getUsers({ pageParam, per_page }: UsersRequestPayload) {
   try {
     const response = await ApiClient.get<UsersSuccessPayload>(`${env.API_URL}/users`, {
       params: {
@@ -78,7 +78,7 @@ export async function modifyUser({ userId, name, job }: ModifyUserRequestPayload
 
 export async function deleteUser({ userId }: DeleteUserRequestPayload) {
   try {
-    const response = await ApiClient.put(`${env.API_URL}/users/${userId}`);
+    const response = await ApiClient.delete(`${env.API_URL}/users/${userId}`);
 
     return response.data;
   } catch (error) {

@@ -90,6 +90,7 @@ const UsersList: FC = () => {
       <FlatList
         data={flattenUsersList}
         backgroundColor="pageBackground"
+        // @TODO: Problem of NativeBase types
         _contentContainerStyle={{
           padding: 15,
         }}

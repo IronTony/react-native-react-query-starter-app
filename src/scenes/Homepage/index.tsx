@@ -1,3 +1,4 @@
+import { useCreateUser, useDeleteUser, useModifyUser } from '@api/hooks/useUser';
 import EnvInfoView from '@components/AppVersion';
 import CSafeAreaView from '@components/CSafeAreaView';
 import { useNavigation } from '@react-navigation/native';
@@ -12,6 +13,9 @@ const Home: FC = () => {
   const [t, i18n] = useTranslation();
   const navigation = useNavigation<GenericNavigationProps>();
   const { setOptions } = useNavigation<GenericNavigationProps>();
+  const { mutate: createUser } = useCreateUser();
+  const { mutate: modifyUser } = useModifyUser();
+  const { mutate: deleteUser } = useDeleteUser();
   const currentLocale = i18n.language;
 
   const switchLocaleToEn = useCallback(() => {
@@ -94,11 +98,46 @@ const Home: FC = () => {
           </Button>
         </Flex>
 
-        <Button onPress={() => navigation.navigate('Main', { screen: 'UsersList' })} backgroundColor="SUN_FLOWER">
+        <Button
+          onPress={() => navigation.navigate('Main', { screen: 'UsersList' })}
+          backgroundColor="SUN_FLOWER"
+          mb="5px"
+        >
           <Flex flexDirection="row" alignItems="center">
             <Icon as={EvilIcons} name="arrow-right" color="WHITE" marginRight={2} fontSize={20} />
             <Text color="WHITE" fontFamily="body" fontStyle="normal">
               {t('Homepage:gotoUsersList')}
+            </Text>
+          </Flex>
+        </Button>
+
+        <Button onPress={() => createUser({ name: 'John', job: 'some-title' })} backgroundColor="SUN_FLOWER" mb="5px">
+          <Flex flexDirection="row" alignItems="center">
+            <Icon as={EvilIcons} name="arrow-right" color="WHITE" marginRight={2} fontSize={20} />
+            <Text color="WHITE" fontFamily="body" fontStyle="normal">
+              {t('Homepage:createNewUser')}
+            </Text>
+          </Flex>
+        </Button>
+
+        <Button
+          onPress={() => modifyUser({ userId: '666', name: 'Jil', job: 'some-title-edited' })}
+          backgroundColor="SUN_FLOWER"
+          mb="5px"
+        >
+          <Flex flexDirection="row" alignItems="center">
+            <Icon as={EvilIcons} name="arrow-right" color="WHITE" marginRight={2} fontSize={20} />
+            <Text color="WHITE" fontFamily="body" fontStyle="normal">
+              {t('Homepage:ModifyUser')}
+            </Text>
+          </Flex>
+        </Button>
+
+        <Button onPress={() => deleteUser({ userId: '999' })} backgroundColor="SUN_FLOWER" mb="5px">
+          <Flex flexDirection="row" alignItems="center">
+            <Icon as={EvilIcons} name="arrow-right" color="WHITE" marginRight={2} fontSize={20} />
+            <Text color="WHITE" fontFamily="body" fontStyle="normal">
+              {t('Homepage:DeleteUser')}
             </Text>
           </Flex>
         </Button>

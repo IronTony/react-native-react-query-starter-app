@@ -10,7 +10,10 @@
     "welcome": "Thank you for using the React Native Starter App\n😍 😘 🙏🏻",
     "releasedWithLove": "Created and released with ❤️ for you",
     "gotoUsersList": "Go to Users List",
-    "openModal": "Open Modal"
+    "openModal": "Open Modal",
+    "createNewUser": " Create new user",
+    "ModifyUser": "Modify user",
+    "DeleteUser": "Delete user"
   },
   "UsersList": {
     "UsersList": "Users List"

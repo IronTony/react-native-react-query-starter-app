@@ -1,33 +1,36 @@
 import {
   CreateUserRequestPayload,
-  CreateUserSuccessPayload,
   DeleteUserRequestPayload,
   ModifyUserRequestPayload,
-  ModifyUserSuccessPayload,
   UserDetailsRequestPayload,
-  UserDetailsSuccessPayload,
 } from '@api/users/types';
 import { createUser, deleteUser, getUserDetails, modifyUser } from '@api/users/users';
 import { useMutation, useQuery } from 'react-query';
 
 function useUser({ userId }: UserDetailsRequestPayload) {
-  return useQuery<UserDetailsSuccessPayload, Error>([`user-${userId}`, { userId }], () => getUserDetails({ userId }), {
+  return useQuery([`user-${userId}`, { userId }], () => getUserDetails({ userId }), {
     enabled: !!userId,
   });
 }
 
-function useCreateUser({ name, job }: CreateUserRequestPayload) {
-  return useMutation<CreateUserSuccessPayload, Error>([`new-user`, { name, job }], () => createUser({ name, job }));
+function useCreateUser() {
+  return useMutation('new-user', ({ name, job }: CreateUserRequestPayload) => createUser({ name, job }), {
+    onSuccess: data => console.log('useCreateUser onSuccess>>> ', data),
+  });
 }
 
-function useModifyUser({ userId, name, job }: ModifyUserRequestPayload) {
-  return useMutation<ModifyUserSuccessPayload, Error>([`modify-${userId}`, { userId, name, job }], () =>
-    modifyUser({ userId, name, job }),
+function useModifyUser() {
+  return useMutation(
+    'modify-user',
+    ({ userId, name, job }: ModifyUserRequestPayload) => modifyUser({ userId, name, job }),
+    {
+      onSuccess: data => console.log('useModifyUser onSuccess>>> ', data),
+    },
   );
 }
 
-function useDeleteUser({ userId }: DeleteUserRequestPayload) {
-  return useMutation<Response, Error>([`del-user-${userId}`, { userId }], () => deleteUser({ userId }));
+function useDeleteUser() {
+  return useMutation('delete-user', ({ userId }: DeleteUserRequestPayload) => deleteUser({ userId }));
 }
 
 export { useUser, useCreateUser, useModifyUser, useDeleteUser };
