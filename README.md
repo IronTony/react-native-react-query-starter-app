@@ -159,7 +159,8 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ✅ Toolbox (https://github.com/panz3r/react-native-toolbox)<br/>
 ✅ Folders structure<br/>
 ✅ `React-query`<br/>
-✅ `React Native Debugger`<br/>
+✅ `React-query Custom hooks (eg. GET, POST, PUT, PATCH, DELETE)`<br/>
+✅ `React Native Flipper Integration`<br/>
 ✅ `i18next`<br/>
 ✅ `React-navigation v6` ❤️<br/>
 ✅ `Nativebase v3` as design system<br />

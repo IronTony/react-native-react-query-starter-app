@@ -1,8 +1,7 @@
 import { Flex, HStack, Icon, Pressable, Text } from 'native-base';
 import React, { FC, memo, ReactNode } from 'react';
-import { StyleProp, TouchableOpacity, View, ViewStyle } from 'react-native';
+import { StyleProp, ViewStyle } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import styles from './styles';
 
 interface IGenericHeader {
   BodyHeader?: ReactNode;

@@ -22,6 +22,7 @@ export const RootStackScreen: FC = () => {
         component={ModalPage}
         options={{
           headerShown: true,
+          headerTitleAlign: 'center',
           headerLeft: () => <></>,
           headerLeftContainerStyle: {
             paddingLeft: customTheme.space[5],

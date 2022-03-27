@@ -16,6 +16,7 @@ export const MainStackScreen: FC = () => {
         component={Homepage}
         options={{
           headerShown: true,
+          headerTitleAlign: 'center',
           ...TransitionPresets.SlideFromRightIOS,
         }}
       />
@@ -24,6 +25,7 @@ export const MainStackScreen: FC = () => {
         component={UsersList}
         options={{
           headerShown: true,
+          headerTitleAlign: 'center',
           headerLeftContainerStyle: {
             paddingLeft: customTheme.space[5],
           },
@@ -38,6 +40,7 @@ export const MainStackScreen: FC = () => {
         component={UserDetails}
         options={{
           headerShown: true,
+          headerTitleAlign: 'center',
           headerLeftContainerStyle: {
             paddingLeft: customTheme.space[5],
           },
