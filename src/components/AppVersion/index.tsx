@@ -7,12 +7,12 @@ const EnvInfoView: FC = () => {
   return (
     <Flex marginTop={5}>
       {/* This is just to show you how to get values from the generated ENV file */}
-      <Text fontSize="2xs" textAlign="center" paddingY="5px" color="ABSESTOS">{`ENV: ${env.ENV}`}</Text>
+      <Text fontSize="2xs" textAlign="center" paddingY="5px" color="ASBESTOS">{`ENV: ${env.ENV}`}</Text>
 
       <Text
         fontSize="2xs"
         textAlign="center"
-        color="ABSESTOS"
+        color="ASBESTOS"
       >{`v.${VersionNumber.appVersion}-${VersionNumber.buildVersion}`}</Text>
     </Flex>
   );

@@ -44,7 +44,7 @@ const App: FC = () => {
         <NavigationContainer ref={navigationRef}>
           <NativeBaseProvider theme={customTheme}>
             <QueryClientProvider client={queryClient}>
-              <StatusBar barStyle="dark-content" backgroundColor="WHITE" />
+              <StatusBar barStyle="dark-content" />
 
               <RootStackScreen />
             </QueryClientProvider>
