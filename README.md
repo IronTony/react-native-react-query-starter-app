@@ -176,16 +176,16 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 
 ## Screenshots
 
-<div align="center" width="50%">
-  <image src="./screenshots/screenshot1.png" width="100%">
+<div align="center">
+  <image src="./screenshots/screenshot1.png" width="50%">
 </div>
 
-<div align="center" width="50%">
-  <image src="./screenshots/screenshot2.png" width="100%">
+<div align="center">
+  <image src="./screenshots/screenshot2.png" width="50%">
 </div>
 
-<div align="center" width="50%">
-  <image src="./screenshots/screenshot3.png" width="100%">
+<div align="center">
+  <image src="./screenshots/screenshot3.png" width="50%">
 </div>
 
 ---
