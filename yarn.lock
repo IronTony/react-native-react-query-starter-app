@@ -7554,10 +7554,10 @@ napi-build-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/napi-build-utils/-/napi-build-utils-1.0.2.tgz#b1fddc0b2c46e380a0b7a76f984dd47c41a13806"
   integrity sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==
 
-native-base@3.3.11:
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.3.11.tgz#c01929a504762adf02cf667af632f1ef2bd52696"
-  integrity sha512-fECEa0Ii0PEcww4AYj17tZfakgUhp+TkiqjZWuwyGXDZXMpjLXZIPdN80DJAx4RT1yk52GVa+mPoYcIWzE2hjw==
+native-base@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.4.1.tgz#cf465eaa22692ba94d04857d1fa4d135d108b569"
+  integrity sha512-nREAuWWfuVh9/BtHE3PHSS8YTnNhYCFEpqqfURRP5R7iArO0ZBeNVH7fmWVcn0H7Qe+7K2sjZQKuQjxDHPvLDA==
   dependencies:
     "@react-aria/focus" "^3.2.3"
     "@react-aria/utils" "^3.6.0"
