@@ -75,7 +75,7 @@
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "@types/jest": "^27.4.1",
     "@types/node": "17.0.23",
-    "@types/react": "17.0.42",
+    "@types/react": "18.0.5",
     "@types/react-native": "0.67.4",
     "@types/react-native-indicators": "^0.16.2",
     "@types/react-native-vector-icons": "^6.4.10",
