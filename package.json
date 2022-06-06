@@ -47,7 +47,7 @@
     "@react-navigation/stack": "6.2.1",
     "axios": "^0.26.1",
     "i18next": "21.6.15",
-    "native-base": "3.3.11",
+    "native-base": "3.4.6",
     "react": "17.0.2",
     "react-i18next": "11.16.5",
     "react-native": "0.67.4",
