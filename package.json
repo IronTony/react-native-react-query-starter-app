@@ -49,7 +49,7 @@
     "i18next": "21.6.15",
     "native-base": "3.3.11",
     "react": "17.0.2",
-    "react-i18next": "11.16.5",
+    "react-i18next": "11.17.1",
     "react-native": "0.67.4",
     "react-native-flipper": "0.142.0",
     "react-native-gesture-handler": "2.3.2",
