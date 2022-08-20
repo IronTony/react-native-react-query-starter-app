@@ -12,8 +12,7 @@ const EnvInfoView: FC = () => {
       <Text
         fontSize="2xs"
         textAlign="center"
-        color="ASBESTOS"
-      >{`v.${VersionNumber.appVersion}-${VersionNumber.buildVersion}`}</Text>
+        color="ASBESTOS">{`v.${VersionNumber.appVersion}-${VersionNumber.buildVersion}`}</Text>
     </Flex>
   );
 };

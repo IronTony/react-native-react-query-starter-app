@@ -46,8 +46,7 @@ const UserDetails: FC = () => {
         _contentContainerStyle={{
           padding: '15px',
         }}
-        showsVerticalScrollIndicator={false}
-      >
+        showsVerticalScrollIndicator={false}>
         <Avatar source={{ uri: singleUserDetails?.data?.avatar }} size="lg" />
         <Flex>
           <Text
@@ -55,8 +54,7 @@ const UserDetails: FC = () => {
             fontFamily="body"
             fontStyle="normal"
             fontSize="md"
-            paddingY="10px"
-          >{`${singleUserDetails?.data?.first_name} ${singleUserDetails?.data?.last_name}`}</Text>
+            paddingY="10px">{`${singleUserDetails?.data?.first_name} ${singleUserDetails?.data?.last_name}`}</Text>
         </Flex>
         <Text color="CLOUDS" fontFamily="body" fontStyle="normal" fontSize="md" paddingY="10px">
           {singleUserDetails?.data?.email}

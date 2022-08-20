@@ -38,8 +38,7 @@ const ModalPage: FC<IModalPage> = ({ children, pageTitle }) => {
           alignItems: 'center',
           justifyContent: 'center',
         }}
-        backgroundColor="MIDNIGHT_BLUE"
-      >
+        backgroundColor="MIDNIGHT_BLUE">
         {children}
       </ScrollView>
     </CSafeAreaView>

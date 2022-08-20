@@ -30,8 +30,7 @@ const GenericHeader: FC<IGenericHeader> = ({
       justifyContent="space-between"
       // style={[style, styles.headerContainer, withShadow && styles.HeaderShadow]}
       height="40px"
-      w="100%"
-    >
+      w="100%">
       <Flex alignItems="center">
         {/*
             The GenericHeader component accepts an onBackClicked prop.
@@ -64,8 +63,7 @@ const GenericHeader: FC<IGenericHeader> = ({
             textAlign="center"
             width="220px"
             numberOfLines={1}
-            ellipsizeMode="tail"
-          >
+            ellipsizeMode="tail">
             {title}
           </Text>
         )}

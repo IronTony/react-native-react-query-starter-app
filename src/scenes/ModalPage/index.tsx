@@ -35,8 +35,7 @@ const ModalPage: FC = () => {
         alignItems: 'center',
         justifyContent: 'center',
       }}
-      backgroundColor="MIDNIGHT_BLUE"
-    >
+      backgroundColor="MIDNIGHT_BLUE">
       <Text color="CLOUDS" textAlign="center" fontFamily="body" fontStyle="normal">
         {t('ModalPage:thisIsAModal')}
       </Text>

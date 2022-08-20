@@ -46,8 +46,7 @@ const UsersList: FC = () => {
             fontStyle="normal"
             fontSize="md"
             paddingY="10px"
-            paddingX="10px"
-          >{`${item.first_name} ${item.last_name}`}</Text>
+            paddingX="10px">{`${item.first_name} ${item.last_name}`}</Text>
         </Flex>
       </Pressable>
     ),
