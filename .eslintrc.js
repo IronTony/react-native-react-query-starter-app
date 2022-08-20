@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'react-hooks'],
   extends: [
     '@react-native-community',
     'plugin:prettier/recommended',
@@ -27,9 +27,10 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-type-arguments': 'error',
         '@typescript-eslint/prefer-nullish-coalescing': 'error',
         '@typescript-eslint/prefer-optional-chain': 'error',
-        // '@typescript-eslint/explicit-module-boundary-types': 'error',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         'react-native/no-inline-styles': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn',
       },
       parser: '@typescript-eslint/parser',
       parserOptions: {

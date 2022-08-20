@@ -43,8 +43,7 @@ const Home: FC = () => {
           flexGrow: 1,
           justifyContent: 'center',
           padding: '15px',
-        }}
-      >
+        }}>
         <Text
           color="WHITE"
           fontFamily="body"
@@ -52,8 +51,7 @@ const Home: FC = () => {
           fontStyle="normal"
           fontSize="3xl"
           paddingBottom="20px"
-          textAlign="center"
-        >
+          textAlign="center">
           {t('Homepage:welcome')}
         </Text>
         <Text
@@ -63,8 +61,7 @@ const Home: FC = () => {
           fontStyle="normal"
           fontSize="sm"
           paddingBottom="20px"
-          textAlign="center"
-        >
+          textAlign="center">
           {t('Homepage:releasedWithLove')}
         </Text>
 
@@ -76,8 +73,7 @@ const Home: FC = () => {
             isPressed={currentLocale === 'it'}
             _pressed={{
               backgroundColor: currentLocale === 'it' ? 'primary' : 'tertiary',
-            }}
-          >
+            }}>
             <Text color="WHITE" fontFamily="body" fontStyle="normal">
               {t('common:italian')}
             </Text>
@@ -90,8 +86,7 @@ const Home: FC = () => {
             isPressed={currentLocale === 'en'}
             _pressed={{
               backgroundColor: currentLocale === 'en' ? 'primary' : 'tertiary',
-            }}
-          >
+            }}>
             <Text color="WHITE" fontFamily="body" fontStyle="normal">
               {t('common:english')}
             </Text>
@@ -101,8 +96,7 @@ const Home: FC = () => {
         <Button
           onPress={() => navigation.navigate('Main', { screen: 'UsersList' })}
           backgroundColor="SUN_FLOWER"
-          mb="5px"
-        >
+          mb="5px">
           <Flex flexDirection="row" alignItems="center">
             <Icon as={EvilIcons} name="arrow-right" color="WHITE" marginRight={2} fontSize={20} />
             <Text color="WHITE" fontFamily="body" fontStyle="normal">
@@ -123,8 +117,7 @@ const Home: FC = () => {
         <Button
           onPress={() => modifyUser({ userId: '666', name: 'Jil', job: 'some-title-edited' })}
           backgroundColor="SUN_FLOWER"
-          mb="5px"
-        >
+          mb="5px">
           <Flex flexDirection="row" alignItems="center">
             <Icon as={EvilIcons} name="arrow-right" color="WHITE" marginRight={2} fontSize={20} />
             <Text color="WHITE" fontFamily="body" fontStyle="normal">
@@ -148,8 +141,7 @@ const Home: FC = () => {
           borderColor="ALIZARIN"
           borderWidth={1}
           marginTop={15}
-          onPress={() => navigation.navigate('MyModal')}
-        >
+          onPress={() => navigation.navigate('MyModal')}>
           <Text color="WHITE" fontFamily="body" fontStyle="normal">
             {t('Homepage:openModal')}
           </Text>

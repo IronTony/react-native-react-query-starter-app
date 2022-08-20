@@ -1,7 +1,11 @@
 import { Box } from 'native-base';
-import React, { FC } from 'react';
+import React, { FC, ReactNode } from 'react';
 
-const CSafeAreaView: FC = ({ children }) => {
+interface CSafeAreaViewProps {
+  children: ReactNode;
+}
+
+const CSafeAreaView: FC<CSafeAreaViewProps> = ({ children }) => {
   return (
     <Box width="100%" height="100%">
       {children}

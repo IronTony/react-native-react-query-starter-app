@@ -2,8 +2,11 @@
 
 > A React Native boilerplate app to bootstrap your next app with React-Query!
 
+## 🔥🔥🔥 Upgraded to the latest React-Native (> 0.69.x) with brand New Architecture (Fabric) 🔥🔥🔥
+
+<br/>
 <div align="center">
-  <image src="./react-native-starter-kit.png" width="100%">
+    <img src="./react-native-starter-kit.png" width="100%" /> 
 </div>
 
 [![License](https://img.shields.io/github/license/IronTony/react-native-react-query-starter-app)](LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -22,6 +25,7 @@
 
 # Table of Contents <!-- omit in toc -->
 
+- [🔥🔥🔥 Upgraded to the latest React-Native (> 0.69.x) with brand New Architecture (Fabric) 🔥🔥🔥](#-upgraded-to-the-latest-react-native--069x-with-brand-new-architecture-fabric-)
 - [Installation :inbox_tray:](#installation-inbox_tray)
 - [Rename project and bundles :memo: :package:](#rename-project-and-bundles-memo-package)
   - [iOS & Android](#ios--android)
@@ -30,6 +34,7 @@
   - [Run the app](#run-the-app)
   - [Generate app icons](#generate-app-icons)
   - [Generate Splashscreen](#generate-splashscreen)
+  - [To enabled React-Native (Fabric) new architecture](#to-enabled-react-native-fabric-new-architecture)
   - [Setup iOS](#setup-ios)
   - [Typescript (optional)](#typescript-optional)
 - [Roadmap :running:](#roadmap-running)
@@ -127,6 +132,10 @@ To setup the app splashscreen:
 yarn assets:splashscreen
 ```
 
+### To enabled React-Native (Fabric) new architecture
+
+Check the official documentation [here](https://reactnative.dev/docs/new-architecture-intro)
+
 ### Setup iOS
 
 To setup the environment to run on iOS, run
@@ -162,7 +171,8 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ✅ Initial Setup<br/>
 ✅ Splashscreen (https://github.com/crazycodeboy/react-native-splash-screen)<br/>
 ✅ Toolbox (https://github.com/panz3r/react-native-toolbox)<br/>
-✅ Folders structure<br/>
+✅ Standard tree folders structure<br/>
+✅ `React-Native 0.69 (new architecture)`<br/>
 ✅ `React-query`<br/>
 ✅ `React-query Custom hooks (eg. GET, POST, PUT, PATCH, DELETE)`<br/>
 ✅ `React Native Flipper Integration`<br/>
@@ -177,15 +187,15 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ## Screenshots
 
 <div align="center">
-  <image src="./screenshots/screenshot1.png" width="50%">
+    <img src="./screenshots/screenshot1.png" width="50%" />
 </div>
 
 <div align="center">
-  <image src="./screenshots/screenshot2.png" width="50%">
+    <img src="./screenshots/screenshot2.png" width="50%" /> 
 </div>
 
 <div align="center">
-  <image src="./screenshots/screenshot3.png" width="50%">
+    <img src="./screenshots/screenshot3.png" width="50%" />
 </div>
 
 ---

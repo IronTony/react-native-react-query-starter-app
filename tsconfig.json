@@ -60,7 +60,7 @@
     "jsx": "react-native",                    /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
     "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
 
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "@*": ["src/*"],
       "@api/*": [

@@ -8,7 +8,7 @@ const typography = {
     '2xl': '0.1em',
   },
   lineHeights: {
-    '2xs': '1em',
+    xxs: '1em',
     xs: '1.125em',
     sm: '1.25em',
     md: '1.375em',
@@ -52,7 +52,7 @@ const typography = {
   },
 
   fontSizes: {
-    '2xs': 10,
+    xxs: 10,
     xs: 12,
     sm: 14,
     md: 16,

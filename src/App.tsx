@@ -3,6 +3,7 @@ import '@i18n';
 import { NavigationContainer } from '@react-navigation/native';
 import { RootStackScreen } from '@routes';
 import { isMountedRef, navigationRef } from '@routes/navigationUtils';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import customTheme from '@theme';
 import { NativeBaseProvider, StatusBar } from 'native-base';
 import React, { FC, Suspense, useEffect } from 'react';
@@ -10,7 +11,6 @@ import 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { enableScreens } from 'react-native-screens';
 import SplashScreen from 'react-native-splash-screen';
-import { QueryClient, QueryClientProvider } from 'react-query';
 
 enableScreens();
 

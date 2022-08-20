@@ -12,10 +12,6 @@ const customTheme = extendTheme({
     primary: palette.EMERALD,
     secondary: palette.ORANGE,
     tertiary: palette.MIDNIGHT_BLUE,
-    error: palette.ALIZARIN,
-    success: palette.TORQUISE,
-    warning: palette.SUN_FLOWER,
-    info: palette.PETER_RIVER,
 
     pageBackground: palette.MIDNIGHT_BLUE,
     headerBackground: palette.WHITE,
